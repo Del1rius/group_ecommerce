@@ -14,11 +14,10 @@ const products = [
     },
     {
       id: 2,
-      image:
-        "https://i.postimg.cc/jSHZ1BFG/device-mockup-gradient-laptop-mockup-laptop.jpg",
-      name: "",
-      desc: "",
-      price: 2,
+      image: "https://i.postimg.cc/2yyM54tC/product2.webp",
+      name: "Microsoft Surface",
+      desc: "the microsoft surface is the pinnacle of at home/business laptop use",
+      price: 20000,
       quantity: 2,
     },
     {
