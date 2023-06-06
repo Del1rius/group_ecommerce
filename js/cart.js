@@ -43,25 +43,25 @@ function showCartTable() {
     let shoppingCart = JSON.parse(localStorage.getItem("shopping-cart"));
     itemCount = shoppingCart.length;
 
-//     //Iterate javascript shopping cart array
-//     shoppingCart.forEach(function (item) {
-//       let cartItem = JSON.parse(item);
-//       price = parseFloat(cartItem.price);
-//       quantity = parseInt(cartItem.quantity);
-//       subTotal = price * quantity;
+    //Iterate javascript shopping cart array
+    shoppingCart.forEach(function (item) {
+      let cartItem = JSON.parse(item);
+      price = parseFloat(cartItem.price);
+      quantity = parseInt(cartItem.quantity);
+      subTotal = price * quantity;
 
-//       cart +=
-//         "<tr>" +
-//         "<td>" ${cartItem.productName} +"</td>" +
-//         "<td class='text-right'>$" +price.toFixed(2) +"</td>" +
-//         "<td class='text-right'>" +quantity +"</td>" +
-//         "<td class='text-right'>$" +subTotal.toFixed(2) +"</td>" +
-//         " <td class="
-//         "</tr>";
+      cart +=
+        "<tr>" +
+        "<td>" +cartItem.productName +"</td>" +
+        "<td class='text-right'>$" +price.toFixed(2) +"</td>" +
+        "<td class='text-right'>" +quantity +"</td>" +
+        "<td class='text-right'>$" +subTotal.toFixed(2) +"</td>" +
+        " <td class="
+        "</tr>";
 
-//       grandTotal += subTotal;
-//     });
-//   }
+      grandTotal += subTotal;
+    });
+  }
 
   $("#cartTableBody").html(cartL);
   $("#itemCount").text(itemCount);
