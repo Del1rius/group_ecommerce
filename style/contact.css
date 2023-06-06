@@ -124,16 +124,23 @@ textarea {
     width: 100%;
     height: 100%;
 }
-
-button {
+ 
+#button {
     color: linear-gradient(145deg, #153677, #9932cc);
-    width: 50px;
+    width: 50%;
     border-radius: 12px;
+    margin-bottom: 12px;
 }
 
-button:hover {
+#button:hover {
     color: whitesmoke;
     background-color: #153677;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #profile-picture{
@@ -141,6 +148,8 @@ button:hover {
     height:30%;
     border-radius: 50%;
     border: 2px solid !important;
+   
+    
 }
 
 .contact-us {
