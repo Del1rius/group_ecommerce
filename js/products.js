@@ -24,8 +24,8 @@ const products = [
       id: 3,
       image:
         "https://i.postimg.cc/Gh2mskxW/product3.jpg",
-      name: "Bose QuietComfort 35 Series",
-      desc: "Bose QuietComfort 35 Wireless Headphones II feature world-class noise cancelling technology.",
+      name: "Bose QuietComfort 35 Series II",
+      desc: "Has world class noise cancelling technology years ahead of its time",
       price: 3800,
       quantity: 3,
     },
@@ -43,17 +43,16 @@ const products = [
       image:
         "https://i.postimg.cc/gcxnSxjF/product5.jpg",
       name: "Venom FerroFluid Magnetic Fluid Gaming Bluetooth Speaker",
-      desc: "",
+      desc: "The most innovative bluetooth speaker on the market",
       price: 5400,
       quantity: 5,
     },
     {
       id: 6,
-      image:
-        "https://i.postimg.cc/jSHZ1BFG/device-mockup-gradient-laptop-mockup-laptop.jpg",
-      name: "",
-      desc: "",
-      price: 6,
+      image: "https://i.postimg.cc/3NfVW3Vz/product6.jpg",
+      name: "49' Samsung Odyssey G9",
+      desc: "The best monitor you can get for your money",
+      price: 25000,
       quantity: 6,
     },
   ];
@@ -82,8 +81,10 @@ const products = [
       cart.push(product);
       product.quantity--;
       updateCart();
-      setItems();
+      
     }
+    setItems();
+    showTask();
   }
   
   function updateCart() {
@@ -109,9 +110,14 @@ function setItems() {
 
 function showTask() {
     const cartContainer = document.getElementById("cart-container");
-    cartContainer = localStorage.getItem(products)
+    cartContainer = localStorage.getItem("cart", cart)
+    // localStorage.getItem(products)
+    // cartContainer.innerHTML += 
 }
-showTask()
   
   
+<<<<<<< HEAD
    
+=======
+showTask();
+>>>>>>> 8ae00ef1813b60e400247bdb8ba37c9225cd6fc5
