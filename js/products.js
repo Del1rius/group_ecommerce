@@ -1,11 +1,15 @@
+var linkElement = document.createElement('link');
+linkElement.rel = 'stylesheet';
+linkElement.href = '../style/products.css';
+document.head.appendChild(linkElement);
+
 const products = [
     {
       id: 1,
-      image:
-        "https://i.postimg.cc/jSHZ1BFG/device-mockup-gradient-laptop-mockup-laptop.jpg",
-      name: "",
-      desc: "",
-      price: 1,
+      image: "https://i.postimg.cc/qvRwVbyD/product1.jpg",
+      name: "SmartWatch",
+      desc: "Its the best smartwatch on the market right now ",
+      price: 5000,
       quantity: 1,
     },
     {
@@ -60,7 +64,7 @@ const products = [
     products.forEach((product) => {
       const productElement = document.createElement("div");
       productElement.innerHTML = `
-          <img src="${product.image}" alt="${product.name}" >
+          <img id="photo" src="${product.image}" alt="${product.name}">
           <h3>${product.name}</h3>
           <p>${product.desc}</p>
           <p> R ${product.price}</p>        
@@ -89,7 +93,7 @@ const products = [
       cart.forEach(product => {
           const cartItem = document.createElement("div")
           cartItem.innerHTML = `<span>${product.name}</span>
-          <span>${product.price}</span>
+          <span>R${product.price}</span>
           `
           cartContainer.appendChild(cartItem)
       }) 
