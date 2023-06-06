@@ -41,9 +41,17 @@ nav ul{
     justify-content: center;
     padding: 5px;
 }
-
 .products {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.products div{
+    margin: 50px;
     border: 2px solid black;
+    width: 500px;
 }
 
 
