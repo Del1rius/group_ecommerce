@@ -39,7 +39,17 @@ h1 {
     font-size: 25px;
     border: 4px solid  #153677;
     padding-bottom:1rem;
+
 }
+
+@media only screen and (max-width:300px){
+    nav a{
+       
+        font-size: small;
+        padding:0;
+
+    }
+  }
 nav ul{
     display: flex;
     flex-direction: row;
@@ -148,4 +158,11 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+  }
+
+  @media only screen and (max-width:300px){
+    .social-icons a{
+        padding:10px 15px;
+       
+    }
   }
