@@ -32,19 +32,19 @@ const products = [
     {
       id: 4,
       image:
-        "https://i.postimg.cc/jSHZ1BFG/device-mockup-gradient-laptop-mockup-laptop.jpg",
-      name: "",
-      desc: "",
-      price: 4,
+        "https://i.postimg.cc/9Xq4f3C6/produc4.jpg",
+      name: "Anker 737 Power Bank",
+      desc: "Currently the best in field when it comes to power banks",
+      price: 3000,
       quantity: 4,
     },
     {
       id: 5,
       image:
-        "https://i.postimg.cc/jSHZ1BFG/device-mockup-gradient-laptop-mockup-laptop.jpg",
-      name: "",
+        "https://i.postimg.cc/gcxnSxjF/product5.jpg",
+      name: "Venom FerroFluid Magnetic Fluid Gaming Bluetooth Speaker",
       desc: "",
-      price: 5,
+      price: 5400,
       quantity: 5,
     },
     {
@@ -108,6 +108,7 @@ function setItems() {
 }
 
 function showTask() {
+    const cartContainer = document.getElementById("cart-container");
     cartContainer = localStorage.getItem(products)
 }
 showTask()
