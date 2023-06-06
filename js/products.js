@@ -7,7 +7,7 @@ const products = [
     {
       id: 1,
       image: "https://i.postimg.cc/qvRwVbyD/product1.jpg",
-      name: "SmartWatch",
+      name: "Smart-Watch",
       desc: "Its the best smartwatch on the market right now ",
       price: 5000,
       quantity: 1,
@@ -72,7 +72,7 @@ const products = [
     });
   }
   
-  const cart = [];
+  let cart = [];
   
   function addToCart(productId) {
     const cartContainer = document.getElementById("cart-container");
