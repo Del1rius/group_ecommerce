@@ -9,3 +9,44 @@
 body {
     font-family: 'Roboto Mono', monospace;
 }
+
+nav a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    
+}
+nav a:hover {
+    background-color: white;
+    color: darkorchid;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+nav {
+    background-color: darkorchid;
+    color: white;
+    font-size: 25px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.products {
+    border: 2px solid black;
+}
+
+
+img {
+    width: 300px;
+}
