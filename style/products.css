@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(145deg, darkorchid, #153677);
 }
 
 nav a {
@@ -44,17 +45,19 @@ nav ul{
 .products {
     display: flex;
     flex-wrap: wrap;
-
-
+   
 }
 
 .products div{
+    background-color: blueviolet;
+    color: white;
     margin: 50px;
     border: 2px solid black;
-    width: 500px;
+    width: 400px;
 }
 
 
 img {
-    width: 300px;
+    width: 399px;
+    border: 2px solid black;
 }
