@@ -116,8 +116,4 @@ function showTask() {
 }
   
   
-<<<<<<< HEAD
-   
-=======
 showTask();
->>>>>>> 8ae00ef1813b60e400247bdb8ba37c9225cd6fc5
