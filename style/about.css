@@ -93,13 +93,13 @@ nav a:hover {
     justify-content: center;
 }
 
-footer {
+/* footer {
     background-color: darkorchid;
     color: white;
     text-align: center;
     font-size: 20px;
     
-}
+} */
 @media screen and (max-width: 300px){
     .nav {
 width:100%;
@@ -108,7 +108,9 @@ width:100%;
 footer{
     background: linear-gradient(145deg, darkorchid, #153677);
     position: relative;
-
+    color: white;
+    text-align: center;
+    font-size: 20px;
 }
 .footer-container{
     width:100%;
