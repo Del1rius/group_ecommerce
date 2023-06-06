@@ -23,10 +23,10 @@ const products = [
     {
       id: 3,
       image:
-        "https://i.postimg.cc/jSHZ1BFG/device-mockup-gradient-laptop-mockup-laptop.jpg",
-      name: "",
-      desc: "",
-      price: 3,
+        "https://i.postimg.cc/Gh2mskxW/product3.jpg",
+      name: "Bose QuietComfort 35 Series",
+      desc: "Bose QuietComfort 35 Wireless Headphones II feature world-class noise cancelling technology.",
+      price: 3800,
       quantity: 3,
     },
     {
@@ -82,6 +82,7 @@ const products = [
       cart.push(product);
       product.quantity--;
       updateCart();
+      setItems();
     }
   }
   
@@ -101,7 +102,15 @@ const products = [
   displayProducts();
   
 
-  
+function setItems() {
+    const cartContainer = document.getElementById("cart-container");
+    localStorage.setItem("data", cartContainer.innerHTML)
+}
+
+function showTask() {
+    cartContainer = localStorage.getItem(products)
+}
+showTask()
   
   
   
