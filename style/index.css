@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 nav {
-    background-color: darkorchid;
+    background: linear-gradient(145deg, darkorchid, #153677);
     color: white;
     font-size: 25px;
 }
@@ -18,8 +18,27 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 0;
+}
 
+nav a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    
+}
+nav a:hover {
+    background-color: white;
+    color: darkorchid;
+    border-radius: 20px;
+    padding: 5px;
+}
 
+ul {
+    margin-right: 0px !important;
+    margin: 0 !important;
+    padding: 0;
 }
 .main-text{
     color: white;
@@ -39,19 +58,7 @@ nav ul{
     height: 100vh;
 }
 
-nav a {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-    padding: 5px;
-    
-}
-nav a:hover {
-    background-color: white;
-    color: darkorchid;
-    border-radius: 20px;
-    padding: 5px;
-}
+
 .cart {
     display: flex;
     align-items: center;
