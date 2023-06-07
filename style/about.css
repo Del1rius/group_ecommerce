@@ -74,6 +74,18 @@ nav ul{
     height: 100vh;
 }
 
+/* header styling */
+nav {
+    background: linear-gradient(145deg, darkorchid, #153677);
+    color: white;
+    font-size: 25px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 nav a {
     list-style: none;
     text-decoration: none;
@@ -87,11 +99,8 @@ nav a:hover {
     border-radius: 20px;
     padding: 5px;
 }
-.cart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* header style end */
+
 
 /* footer {
     background-color: darkorchid;
