@@ -64,7 +64,6 @@ footer{
     background: linear-gradient(145deg, darkorchid, #153677);
     position: relative;
 
-<<<<<<< HEAD
 }
 .footer-container{
     width:100%;
@@ -115,28 +114,20 @@ footer{
     width: 100%;
 }
 /* footer style end  */
-=======
-a button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
+button {
     background-color: darkorchid;
+    border: 2px solid black;
+    border-radius: 30px;
     color: white;
     padding: 5px;
-    cursor: pointer;
-    list-style: none;
-    text-decoration: none;
-    border: 2px solid black;
-    margin-top: 10px;
-    margin-left: 75px;
+    margin-top: 5px;
 }
 
 button:hover {
-    border-radius: 30px;
     background-color: white;
-    color: darkorchid;
-    text-decoration: none;
     border: 2px solid black;
+    border-radius: 30px;
+    color: darkorchid;
+    padding: 5px;
+    margin-top: 5px;
 }
->>>>>>> 524f8f86c3cedbcc3afe3018f24114e8f3db5229
