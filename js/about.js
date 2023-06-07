@@ -16,7 +16,7 @@ let team = [
     {
       id: 3,
       image: "https://i.postimg.cc/YCj8KLcY/C12-C-1-Lyle-Brown-2.jpg",
-      name: "Lyle Brown AKA Koppe",
+      name: "Lyle Brown AKA Pablo",
       role: "Sweeper's Brother (same daddy different mommy)",
     },
     {
@@ -33,8 +33,8 @@ let team = [
     },
     {
         id: 6,
-        image: "https://i.postimg.cc/HWJDpnQ0/IMG-2239.jpg",
-        name: "Ridhaa Gabier AKA Piele",
+        image: "https://i.postimg.cc/jjLwsxr3/rrr.jpg",
+        name: "Ridhaa Gabier AKA Dovy",
         role: "Security Guard",
       },
       {
@@ -46,13 +46,13 @@ let team = [
       {
         id: 8,
         image: "https://i.postimg.cc/28vwGNDN/IMG-2409-2.jpg",
-        name: "Zulaigah Benjamin aka zu lui gat",
-        role: "Finance Manager",
+        name: "Zulaigah Benjamin aka Jochem's wife",
+        role: "Absent",
       },
       {
         id: 8,
-        image: "https://i.postimg.cc/dVLW6BbC/imr.png",
-        name: "Imraan Bernksen",
+        image: "https://i.postimg.cc/k5jwBXZ0/imooo.png",
+        name: "Imraan Bernksen AKA Mommy Berns",
         role: "Big Boss",
       },
   ];
@@ -61,7 +61,7 @@ let team = [
   team.forEach((data) => {
     myTeam.innerHTML += `
    
-      <div class= "card">
+  <div class= "card">
          <div class="image">
              <img src="${data.image}" loading="lazy" class="img-fluid">
              <br>
