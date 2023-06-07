@@ -16,6 +16,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <style>
+      ::-webkit-scrollbar{
+          display: none;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -25,7 +30,7 @@
             <img
               src="https://i.postimg.cc/L40McznY/logo.png"
               alt="Our Logo"
-              style="height: 3rem; margin: 0"
+              style="height: 3rem; margin: 0; width: 3rem;"
             />
             <a href="../index.html"><li>Home</li></a>
             <a href="./products.html"><li>Products</li></a>
@@ -38,7 +43,7 @@
     </header>
     <main class="background">
       <div class="row d-flex justify-content-evenly">
-        <strong class="contact-us">Contact Us !!</strong>
+        <span id="contact-us"><strong class="contact-us">Contact Us !!</strong></span>
 
         <div class="col-12 col-md-7 col-sm-6" id="left">
           <form
@@ -46,18 +51,14 @@
             method="POST"
             id="form"
           >
-            <label>
-              Your Name: <br />
-              <input type="name" name="name" required />
-            </label>
-            <label>
-              Your email:<br />
-              <input type="email" name="email" required />
-            </label>
-            <label>
-              Your message: <br />
-              <textarea name="message" required></textarea>
-            </label>
+            <strong><label>Your Name: </label></strong>              
+            <input type="name" name="name" required  placeholder="Enter your Full Name"/>
+            
+            <strong><label>Your email:</label></strong>
+            <input type="email" name="email" required placeholder="Enter your Email" />
+              
+              <strong><label>Your message:</label></strong>
+              <textarea name="message" required placeholder="What is on your Mind?"></textarea><br>
             <button id="button" type="submit">Send</button>
           </form>
         </div>
@@ -71,13 +72,13 @@
             />
             <br />
             <div class="m-a">
-                <a href="" class="bi-geo-alt-fill text-black">
+                <a href="" class="bi-geo-alt-fill text-white">
                   Cape Town, South Africa</a
                 ><br><br>
-                <a href="" class="bi-envelope-fill text-black"
-                  >imraangadgets@hotmail.com</a
+                <a href="" class="bi-envelope-fill text-white"
+                  > imraangadgets@ymail.com</a
                 ><br><br>
-                <a href="" class="bi-telephone-fill text-black">021-065-1154</a>
+                <a href="" class="bi-telephone-fill text-white"> 021-065-1154</a>
             </div>
           </div>
         </div>
