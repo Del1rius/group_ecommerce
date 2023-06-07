@@ -30,7 +30,7 @@
             <img
               src="https://i.postimg.cc/L40McznY/logo.png"
               alt="Our Logo"
-              style="height: 3rem; margin: 0"
+              style="height: 3rem; margin: 0; width: 3rem;"
             />
             <a href="../index.html"><li>Home</li></a>
             <a href="./products.html"><li>Products</li></a>
@@ -43,7 +43,7 @@
     </header>
     <main class="background">
       <div class="row d-flex justify-content-evenly">
-        <strong class="contact-us">Contact Us !!</strong>
+        <span id="contact-us"><strong class="contact-us">Contact Us !!</strong></span>
 
         <div class="col-12 col-md-7 col-sm-6" id="left">
           <form
@@ -52,13 +52,13 @@
             id="form"
           >
             <strong><label>Your Name: </label></strong>              
-            <input type="name" name="name" required />
+            <input type="name" name="name" required  placeholder="Enter your Full Name"/>
             
             <strong><label>Your email:</label></strong>
-            <input type="email" name="email" required />
+            <input type="email" name="email" required placeholder="Enter your Email" />
               
               <strong><label>Your message:</label></strong>
-              <textarea name="message" required></textarea><br>
+              <textarea name="message" required placeholder="What is on your Mind?"></textarea><br>
             <button id="button" type="submit">Send</button>
           </form>
         </div>
