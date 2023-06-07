@@ -20,6 +20,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 0;
 }
 
 nav a {
@@ -35,6 +36,12 @@ nav a:hover {
     border-radius: 20px;
     padding: 5px;
 }
+
+ul {
+    margin-right: 0px !important;
+    margin: 0 !important;
+    padding: 0;
+}
 /* header style end */
 
 /* main section styling */
@@ -42,7 +49,7 @@ nav a:hover {
 main{
     background: linear-gradient(145deg, #153677, darkorchid);
     color: black;
-    height: 73vh;
+    height: 75vh;
 }
 
 #contact-us{
@@ -187,3 +194,23 @@ footer{
     width: 100%;
 }
 /* footer style end  */
+
+@media screen and (max-width: 300px){
+    .nav {
+width:100%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    nav a{
+        font-size: 10px;
+        padding:0;
+
+    }
+}
+
+@media only screen and (max-width:300px){
+    .social-icons a{
+        padding:10px 15px; 
+    }
+  }
