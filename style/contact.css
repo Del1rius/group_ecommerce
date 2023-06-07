@@ -20,6 +20,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 0;
 }
 
 nav a {
@@ -35,21 +36,27 @@ nav a:hover {
     border-radius: 20px;
     padding: 5px;
 }
+
+ul {
+    margin-right: 0px !important;
+    margin: 0 !important;
+    padding: 0;
+}
 /* header style end */
 
 /* main section styling */
 
 main{
-    /* background: linear-gradient(145deg, #153677, darkorchid); */
-    background-color: black;
-    color: whitesmoke;
-    height: 73vh;
+    background: linear-gradient(145deg, #153677, darkorchid);
+    color: black;
+    height: 75vh;
 }
 
 #contact-us{
     font-size: 30px;
     text-align: center;
     margin: 10px;
+    color: white;
 }
 
 /* left column with form */
@@ -59,6 +66,7 @@ main{
     border: 2px solid darkorchid;
     border-radius: 12px;
     text-align: center;
+    background-color: darkorchid;
 }
 
 #form{
@@ -108,7 +116,7 @@ textarea {
 
 
 /* right column */
-#right{
+/* #right{
     padding: 5px;
     margin: 5px;
     border: 2px solid darkorchid;
@@ -126,7 +134,7 @@ textarea {
     height:30%;
     border-radius: 50%;
     border: 2px solid !important;
-}
+} */
 
 
 /* main section styling end */
@@ -186,3 +194,23 @@ footer{
     width: 100%;
 }
 /* footer style end  */
+
+@media screen and (max-width: 300px){
+    .nav {
+width:100%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    nav a{
+        font-size: 10px;
+        padding:0;
+
+    }
+}
+
+@media only screen and (max-width:300px){
+    .social-icons a{
+        padding:10px 15px; 
+    }
+  }
