@@ -84,7 +84,6 @@ const products = [
       
     }
     setItems();
-    showTask();
   }
   
   function updateCart() {
@@ -105,12 +104,12 @@ const products = [
 
 function setItems() {
     const cartContainer = document.getElementById("cart-container");
-    localStorage.setItem("data", cartContainer.innerHTML)
+    localStorage.setItem("data", JSON.stringify(cartContainer.innerHTML))
 }
 
 function showTask() {
     const cartContainer = document.getElementById("cart-container");
-    cartContainer = localStorage.getItem("cart", cart)
+    cartContainer = localStorage.getItem(JSON.parse("data"))
     // localStorage.getItem(products)
     // cartContainer.innerHTML += 
 }

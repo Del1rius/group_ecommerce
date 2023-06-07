@@ -40,9 +40,8 @@ nav a:hover {
 /* main section styling */
 
 main{
-    /* background: linear-gradient(145deg, #153677, darkorchid); */
-    background-color: black;
-    color: whitesmoke;
+    background: linear-gradient(145deg, #153677, darkorchid);
+    color: black;
     height: 73vh;
 }
 
@@ -50,6 +49,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin: 10px;
+    color: white;
 }
 
 /* left column with form */
@@ -59,6 +59,7 @@ main{
     border: 2px solid darkorchid;
     border-radius: 12px;
     text-align: center;
+    background-color: darkorchid;
 }
 
 #form{
@@ -108,7 +109,7 @@ textarea {
 
 
 /* right column */
-#right{
+/* #right{
     padding: 5px;
     margin: 5px;
     border: 2px solid darkorchid;
@@ -126,7 +127,7 @@ textarea {
     height:30%;
     border-radius: 50%;
     border: 2px solid !important;
-}
+} */
 
 
 /* main section styling end */
