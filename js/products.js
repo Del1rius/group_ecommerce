@@ -71,7 +71,7 @@ const products = [
     });
   }
   
-  let cart = [];
+  let cart = JSON.parse(localStorage.getItem('data')) || [];
   
   function addToCart(productId) {
     const cartContainer = document.getElementById("cart-container");
@@ -104,14 +104,19 @@ const products = [
 
 function setItems() {
     const cartContainer = document.getElementById("cart-container");
-    localStorage.setItem("data", JSON.stringify(cartContainer.innerHTML))
+    localStorage.setItem("data", JSON.stringify(cart))
+    console.log(cart)
 }
 
 function showTask() {
     const cartContainer = document.getElementById("cart-container");
-    cartContainer = localStorage.getItem(JSON.parse("data"))
-    // localStorage.getItem(products)
-    // cartContainer.innerHTML += 
+    cart.forEach(item => {
+      cartContainer.innerHTML += `
+        <span>${item.name}</span><br>
+        <span>R
+        ${item.price}</span><br>
+      `
+    })
 }
   
   
