@@ -5,7 +5,7 @@ let team = [
       id: 1,
       image: "https://i.postimg.cc/kg54X1N1/C12-C1-Sidwell-Batyi-2.jpg",
       name: "Sidwell Batyi AKA AV",
-      role: "Owner of nothing  / Private Investor / Delivery Guy",
+      role: "Private Investor",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ let team = [
     {
       id: 4,
       image: "https://i.postimg.cc/Njdr7d5w/c12-marcel-brown-1.jpg",
-      name: "Marcel Brown AKA TINY",
+      name: "Marcel Brown AKA Rowan",
       role: "Sweeper (Oslin's my daddy)",
     },
     {
@@ -47,16 +47,22 @@ let team = [
         id: 8,
         image: "https://i.postimg.cc/28vwGNDN/IMG-2409-2.jpg",
         name: "Zulaigah Benjamin aka zu lui gat",
-        role: "Finance Manager / Cleaner ",
+        role: "Finance Manager",
+      },
+      {
+        id: 8,
+        image: "https://i.postimg.cc/dVLW6BbC/imr.png",
+        name: "Imraan Bernksen",
+        role: "Big Boss",
       },
   ];
   
   let myTeam = document.querySelector(".team");
   team.forEach((data) => {
     myTeam.innerHTML += `
-    <div class="col-4">
+   
       <div class= "card">
-         <div class="images">
+         <div class="image">
              <img src="${data.image}" loading="lazy" class="img-fluid">
              <br>
              <h3>${data.name}</h3>
@@ -65,6 +71,6 @@ let team = [
     <p class="price">${data.role}</p>
     <br>
     </div>
-   </div>
+  
    `
   });
